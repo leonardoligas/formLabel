@@ -1,0 +1,63 @@
+
+
+<html>
+    <head>
+        <title>Example Page</title>
+ 
+        
+        <link href="css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/formLabel.js">
+
+        </script>
+        <script type="text/javascript" >
+            $().ready(function() {
+                
+                $("#Cars").formLabel({
+                    title: 'Delete From list',
+                    color: " 3166ff",
+                    background_color: "ffffff",
+                    name: "car",
+                    list: new Array("Ferrari", "Mercedes", "BMW"),
+                    existelement: new Array("0","1")
+                    
+                });
+
+                $("#Fruits").formLabel({
+                    title: 'Delete From list',
+                    color: "ffffff",
+                    background_color: "3166ff",
+                    name: "fruit",
+                    list: new Array("Apple", "Pear", "Pineapple", "Banana"),
+                    existelement: new Array("0","3")
+                });
+              
+            });
+        </script>
+    </head>
+    <body>
+
+        <!-- Content -->
+        <div class="container">
+            <div class="page-header">
+                <h1>Formsss</h1>
+            </div>
+            <div class="row">
+                <div class="span9 offset1">
+
+                    <form  action="#"
+                           method="POST"  class="well form-search">
+                        <div id="Cars"></div>
+
+                        <div id="Fruit"></div>
+
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
